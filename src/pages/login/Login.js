@@ -63,6 +63,12 @@ export default function Login() {
 				{passwordNotFound && (
 					<span style={{color: "green",textAlign: "center",marginTop: "20px"}}>Password not found</span>
 				)}
+				<p className="sign-up">Or Sign Up Using</p>
+				<div className="icons">
+					<a href="#"><i className="fab fa-facebook"></i></a>
+					<a href="#"><i className="fab fa-twitter"></i></a>
+					<a href="#"><i className="fab fa-google"></i></a>
+				</div>
 			</form>
 			<button className="loginRegisterButton">
 				<Link className="link" to="/register">Register</Link>
