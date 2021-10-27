@@ -13,12 +13,12 @@ import Login from './pages/login/Login';
 import Settings from './pages/settings/Settings';
 import Single from './pages/single/Single';
 import Write from './pages/write/Write';
-import { useContext } from "react";
-import { Context } from "./context/Context"
+// import { useContext } from "react";
+// import { Context } from "./context/Context"
 
 function App() {
 
-	const {user} = useContext(Context);
+	// const {user} = useContext(Context);
 
   return (
   	<Router>
@@ -28,16 +28,16 @@ function App() {
             <Home />
           </Route>
           <Route path="/login">
-            {user ? <Home /> :<Login />}
+            <Login />
           </Route>
           <Route path="/register">
-            {user ? <Home /> :<Register />}
+            <Register />
           </Route>
           <Route path="/settings">
-            {user ? <Settings /> :<Register />}
+            <Settings />
           </Route>
           <Route path="/write">
-            {user ? <Write /> :<Register />}
+            <Write />
           </Route>
           <Route exact path="/post/:pageId/:pageTitle/">
             <Single />
