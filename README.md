@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Webu Blog application client related files
+
+Follow the below steps to get started.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
