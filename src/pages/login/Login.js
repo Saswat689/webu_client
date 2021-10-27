@@ -50,10 +50,10 @@ export default function Login() {
          </Helmet>
 		<span className="loginTitle">Login</span>
 			<form className="loginForm" onSubmit={handleSubmit}>
-				<label className="loginFormLabel">Username</label>
+				<label className="loginFormLabel"> <i className="fas fa-user"></i> Username</label>
 				<input type="text" className="loginInput" placeholder="Enter your username..." ref={userRef}/>
 
-				<label className="loginFormLabel">Password</label>
+				<label className="loginFormLabel"><i className="fas fa-lock"></i> Password</label>
 				<input type="password" className="loginInput" placeholder="Enter your password..." ref={passwordRef}/>
 
 				<button className="loginButton" type="submit" disabled={isFetching}>Login</button>

@@ -36,13 +36,13 @@ export default function Register() {
 			<span className="registerTitle">Register</span>
 			<form className="registerForm" onSubmit={handleSubmit}>
 
-				<label className="registerFormLabel">Username</label>
+				<label className="registerFormLabel"><i className="fas fa-user"></i> Username</label>
 				<input type="text" className="registerInput" placeholder="Enter your username" onChange={e => setUsername(e.target.value)}/>
 
-				<label className="registerFormLabel">Email</label>
+				<label className="registerFormLabel"> <i className="fas fa-envelope-open"></i> Email</label>
 				<input type="email" className="registerInput" placeholder="Enter your email" onChange={e => setEmail(e.target.value)}/>
 
-				<label className="registerFormLabel">Password</label>
+				<label className="registerFormLabel"><i className="fas fa-unlock-alt"></i> Password</label>
 				<input type="password" className="registerInput" placeholder="Enter your password" onChange={e => setPassword(e.target.value)}/>
 
 				<button className="registerButton" type="submit">Register</button>
