@@ -4,18 +4,22 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("https://blog.mailup.com/wp-content/uploads/email-design-08-cover.jpg");
 	background-size: cover;
 }
 .registerTitle{
 	font-size: 50px;
-
+	color: #fff;
 }
 .registerForm{
 	width: 30%;
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
+	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255,255,255,0.3));
+	color: #000;
+	padding: 30px;
+	border-radius: 30px;
 }
 .registerFormLabel{
 	margin: 10px 0;
@@ -24,27 +28,46 @@
 	padding: 10px;
 	background: white;
 	border: none;
+	border-radius: 10px;
 }
 .registerButton{
 	margin-top: 20px;
 	cursor: pointer;
-	background: lightcoral;
+	background-image: linear-gradient(to right, #7b4397, #dc2430);
 	border: none;
 	color: white;
 	border-radius: 10px;
 	padding: 10px;
+	font-weight: 600;
+	letter-spacing: 1px;
 }
+
+.registerButton:hover{
+	background-image: linear-gradient(to left, #7b4397, #dc2430);
+	color: #fff;
+	outline: none;
+}
+
 .registerLoginButton{
 	position: absolute;
-	top: 60px;
+	top: 70px;
 	right: 20px;
-	background: teal;
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,0.5));
 	cursor: pointer;
 	border: none;
-	padding: 10px;
+	padding: 10px 30px;
 	color: white;
 	border-radius: 10px;
+	font-weight: 600;
 }
+
+.registerLoginButton:hover{
+	background-image: linear-gradient(to right, #7b4397, #dc2430);
+	color: #fff;
+	outline: none;
+}
+
+
 @media (max-width: 700px){
 	.registerForm{
 		width: 80%;
