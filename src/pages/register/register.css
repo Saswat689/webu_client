@@ -4,22 +4,27 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("https://blog.mailup.com/wp-content/uploads/email-design-08-cover.jpg");
+	background: url("https://pakish.pk/wp-content/uploads/2018/05/website-login-background.jpg");
 	background-size: cover;
+	background-position: center;
 }
 .registerTitle{
-	font-size: 50px;
-	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	color: #000;
+	font-weight: 500;
+	margin-bottom: 40px;
 }
 .registerForm{
 	width: 30%;
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
-	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255,255,255,0.3));
-	color: #fff;
-	padding: 30px;
+	background-color: #fff;
+	color: #000;
+	padding: 45px;
 	border-radius: 10px;
+	font-weight: lighter;
 }
 .registerFormLabel{
 	margin: 10px 0;
@@ -33,7 +38,7 @@
 .registerButton{
 	margin-top: 20px;
 	cursor: pointer;
-	background-image: linear-gradient(to right, #7b4397, #dc2430);
+	background-color: #0070FF;
 	border: none;
 	color: white;
 	border-radius: 10px;
@@ -43,16 +48,14 @@
 }
 
 .registerButton:hover{
-	background-image: linear-gradient(to left, #7b4397, #dc2430);
-	color: #fff;
-	outline: none;
+	background-color: lightseagreen;
 }
 
 .registerLoginButton{
 	position: absolute;
 	top: 70px;
 	right: 20px;
-	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,0.5));
+	background-color: #0070FF;
 	cursor: pointer;
 	border: none;
 	padding: 10px 30px;
@@ -62,14 +65,53 @@
 }
 
 .registerLoginButton:hover{
-	background-image: linear-gradient(to left, #7b4397, #dc2430);
-	color: #fff;
-	outline: none;
+	background-color: lightseagreen;
 }
 
+.fa-unlock{
+	color: gray;
+}
+.fa-envelope-open{
+	color: gray;
+}
+.fa-user{
+	color: gray;
+}
+
+@media (max-width: 1200px){
+	.registerForm{
+		width: 420px;
+	}
+}
 
 @media (max-width: 700px){
 	.registerForm{
-		width: 80%;
+		width: 420px;
+	}
+}
+
+@media (max-width: 480px){
+	.registerForm{
+		max-width: 350px;
+	}
+	.icons .child{
+		padding: 5px 20px;
+	}
+	.png-resize{
+		width: 140px;
+		height: 100px;
+		margin: auto;
+		object-fit: cover;
+	}
+	.registerTitle{
+		font-size: 25px;
+	}
+}
+@media (max-width: 375px){
+	.registerForm{
+		max-width: 300px;
+	}
+	.icons .child{
+		padding: 5px 20px;
 	}
 }

@@ -4,13 +4,16 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("https://miro.medium.com/max/1400/0*hDAyhnOx767w5qma.jpg");
+	background: url("https://yourcompany.coloredbrain.com/wp-content/uploads/2016/07/login-background.jpg");
 	background-size: cover;
+	background-position: center;
 }
 .loginTitle{
-	font-size: 50px;
-	color: #fff;
-	font-weight: 400;
+	text-align: center;
+	font-size: 30px;
+	color: #000;
+	font-weight: 500;
+	margin-bottom: 40px;
 
 }
 .loginForm{
@@ -18,11 +21,10 @@
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
-	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255,255,255,0.3));
-	color: #fff;
+	background-color: #fff;
+	color: gray;
 	font-weight: lighter;
-
-	padding: 30px;
+	padding: 45px;
 	border-radius: 10px;
 }
 .loginFormLabel{
@@ -30,14 +32,16 @@
 }
 .loginInput{
 	padding: 10px;
-	background: white;
+	background: inherit;
 	border: none;
 	border-radius: 10px;
+	outline: none;
+	width: 100%;
 }
 .loginButton{
 	margin-top: 20px;
 	cursor: pointer;
-	background-image: linear-gradient(to right, #7b4397, #dc2430);
+	background-color: #0070FF;
 	border: none;
 	color: white;
 	border-radius: 10px;
@@ -47,8 +51,7 @@
 }
 
 .loginButton:hover{
-	transition: .2s ease-in-out;
-	background-image: linear-gradient(to left, #7b4397, #dc2430);
+	background-color: lightseagreen;
 }
 .loginButton:disabled{
 	cursor: not-allowed;
@@ -58,20 +61,18 @@
 	position: absolute;
 	top: 70px;
 	right: 20px;
-	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,0.5));
+	background-color: #018dff;
 	cursor: pointer;
 	border: none;
 	padding: 10px 20px;
-	color: #000;
+	color: #fff;
 	border-radius: 10px;
 	font-weight: 600;
 }
 
 
 .loginRegisterButton:hover{
-	background-image: linear-gradient(to right, #7b4397, #dc2430);
-	color: #fff;
-	outline: none;
+	background-color: lightseagreen;
 }
 
 .sign-up{
@@ -84,8 +85,8 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: .5rem;
-	font-size: 1.5rem;
+	gap: 1rem;
+	font-size: 1.2rem;
 }
 .icons i:hover{
 	color: lightseagreen;
@@ -104,11 +105,59 @@
 	color:tomato; 
 }
 
+.png-resize{
+	width: 190px;
+	height: 150px;
+	margin: auto;
+	object-fit: cover;
+}
 
+.icon-box{
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid lightgray;
+	margin-bottom: 15px;
+}
 
+.icons .child{
+	border: 1px solid lightgray;
+	padding: 7px 45px;
+	border-radius: 10px;
+}
 
+@media (max-width: 1200px){
+	.loginForm{
+		width: 420px;
+	}
+}
 @media (max-width: 700px){
 	.loginForm{
-		width: 80%;
+		width: 420px;
+	}
+}
+
+@media (max-width: 480px){
+	.loginForm{
+		max-width: 350px;
+	}
+	.icons .child{
+		padding: 5px 20px;
+	}
+	.png-resize{
+		width: 140px;
+		height: 100px;
+		margin: auto;
+		object-fit: cover;
+	}
+	.loginTitle{
+		font-size: 25px;
+	}
+}
+@media (max-width: 375px){
+	.loginForm{
+		max-width: 300px;
+	}
+	.icons .child{
+		padding: 5px 20px;
 	}
 }

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { Context } from '../../context/Context';
 import axios from 'axios';
 import {Helmet} from "react-helmet";
+import LoginImg from '../login/undraw_happy_feeling_slmw.png'
+
 
 export default function Login() {
 
@@ -48,13 +50,20 @@ export default function Login() {
                 <meta charSet="utf-8" />
                 <title>Login on Webu</title>
          </Helmet>
-		<span className="loginTitle">Login</span>
 			<form className="loginForm" onSubmit={handleSubmit}>
-				<label className="loginFormLabel"> <i className="fas fa-user"></i> Username</label>
-				<input type="text" className="loginInput" placeholder="Enter your username..." ref={userRef}/>
+				{/* <img src={LoginImg} className="img-fluid png-resize"/> */}
+				<span className="loginTitle">Login</span>
+				
+				<div className="icon-box">
+					<i className="far fa-user"></i>
+					<input type="text" className="loginInput" placeholder="Username" ref={userRef}/>
+				</div>
+				
+				<div className="icon-box">
+					<i className="fas fa-unlock"></i>
+					<input type="password" className="loginInput" placeholder="Password" ref={passwordRef}/>	
+				</div>
 
-				<label className="loginFormLabel"><i className="fas fa-lock"></i> Password</label>
-				<input type="password" className="loginInput" placeholder="Enter your password..." ref={passwordRef}/>
 
 				<button className="loginButton" type="submit" disabled={isFetching}>Login</button>
 				{userNotFound && (
@@ -63,11 +72,11 @@ export default function Login() {
 				{passwordNotFound && (
 					<span style={{color: "green",textAlign: "center",marginTop: "20px"}}>Password not found</span>
 				)}
-				<p className="sign-up">Or Sign Up Using</p>
+				<p className="sign-up">Or, login with...</p>
 				<div className="icons">
-					<a href="#"><i className="fab fa-facebook"></i></a>
-					<a href="#"><i className="fab fa-twitter"></i></a>
-					<a href="#"><i className="fab fa-google"></i></a>
+					<a href="#" className="child"><i className="fab fa-facebook"></i></a>
+					<a href="#" className="child"><i className="fab fa-twitter"></i></a>
+					<a href="#" className="child"><i className="fab fa-google"></i></a>
 				</div>
 			</form>
 			<button className="loginRegisterButton">
