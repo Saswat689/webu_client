@@ -36,7 +36,7 @@ export default function Register() {
                 <title>Register on Webu</title>
          </Helmet>
 			<form className="registerForm" onSubmit={handleSubmit}>
-				{/* <img src={RegImg} className="img-fluid png-resize"/> */}
+				<img src={RegImg} className="img-fluid png-resize"/>
 				<span className="registerTitle">Register</span>
 				
 				<div className="icons">

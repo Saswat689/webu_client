@@ -51,7 +51,7 @@ export default function Login() {
                 <title>Login on Webu</title>
          </Helmet>
 			<form className="loginForm" onSubmit={handleSubmit}>
-				{/* <img src={LoginImg} className="img-fluid png-resize"/> */}
+				<img src={LoginImg} className="img-fluid png-resize"/>
 				<span className="loginTitle">Login</span>
 				
 				<div className="icon-box">
