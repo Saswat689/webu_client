@@ -8,60 +8,12 @@
 	background-size: cover;
 	background-position: center;
 }
-.loginTitle{
-	text-align: center;
-	font-size: 30px;
-	color: #000;
-	font-weight: 500;
-	margin-bottom: 40px;
 
-}
-.loginForm{
-	width: 30%;
-	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-	background-color: #fff;
-	color: gray;
-	font-weight: lighter;
-	padding: 45px;
-	border-radius: 10px;
-}
-.loginFormLabel{
-	margin: 10px 0;
-}
-.loginInput{
-	padding: 10px;
-	background: inherit;
-	border: none;
-	border-radius: 10px;
-	outline: none;
-	width: 100%;
-}
-.loginButton{
-	margin-top: 20px;
-	cursor: pointer;
-	background-color: #0070FF;
-	border: none;
-	color: white;
-	border-radius: 10px;
-	padding: 10px;
-	font-weight: 600;
-	letter-spacing: 1px;
-}
-
-.loginButton:hover{
-	background-color: lightseagreen;
-}
-.loginButton:disabled{
-	cursor: not-allowed;
-	background: rgb(252,173,173);
-}
 .loginRegisterButton{
 	position: absolute;
 	top: 70px;
 	right: 20px;
-	background-color: #018dff;
+	background-color:green;
 	cursor: pointer;
 	border: none;
 	padding: 10px 20px;
@@ -70,94 +22,10 @@
 	font-weight: 600;
 }
 
-
 .loginRegisterButton:hover{
-	background-color: lightseagreen;
-}
-
-.sign-up{
-	text-align: center;
-	margin-top: 15px;
-}
-
-.icons{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	font-size: 1.2rem;
-}
-.icons i:hover{
-	color: lightseagreen;
-	transform: scale(1.2);
+	background-color: #42ba96;
 }
 
 
 
-.fa-facebook{
-	color: #3b5998; 
-}
-.fa-twitter{
-	color: #00acee; 
-}
-.fa-google{
-	color:tomato; 
-}
-
-.png-resize{
-	width: 190px;
-	height: 150px;
-	margin: auto;
-	object-fit: cover;
-}
-
-.icon-box{
-	display: flex;
-	align-items: center;
-	border-bottom: 1px solid lightgray;
-	margin-bottom: 15px;
-}
-
-.icons .child{
-	border: 1px solid lightgray;
-	padding: 7px 45px;
-	border-radius: 10px;
-}
-
-@media (max-width: 1200px){
-	.loginForm{
-		width: 420px;
-	}
-}
-@media (max-width: 700px){
-	.loginForm{
-		width: 420px;
-	}
-}
-
-@media (max-width: 480px){
-	.loginForm{
-		max-width: 350px;
-	}
-	.icons .child{
-		padding: 5px 20px;
-	}
-	.png-resize{
-		width: 140px;
-		height: 100px;
-		margin: auto;
-		object-fit: cover;
-	}
-	.loginTitle{
-		font-size: 25px;
-	}
-}
-@media (max-width: 375px){
-	.loginForm{
-		max-width: 300px;
-	}
-	.icons .child{
-		padding: 5px 20px;
-	}
-}
+/*Material-UI*/
