@@ -5,10 +5,62 @@ import { Context } from '../../context/Context';
 import axios from 'axios';
 import {Helmet} from "react-helmet";
 import LoginImg from '../login/undraw_happy_feeling_slmw.png'
+import TextField from '@material-ui/core/TextField'
+import { Button,  Typography } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
+
+
+
+const useStyles = makeStyles({
+	container:{
+		width: '420px',
+		'@media (max-width: 425px)' : {
+			width: '300px'
+		},
+		backgroundColor: 'white',
+		color: '#333',
+		padding: '2rem',
+		borderRadius: '5px'
+	},
+	title:{
+		textAlign: 'center',
+		marginTop: '15px',
+		marginBottom: '15px',
+		color: 'black'
+	},
+	inputs:{
+		marginBottom: '10px'
+	},
+	btn:{
+		backgroundColor: 'green',
+		'&:hover': {
+      background: "#42ba96",
+    },
+		fontWeight: '500',
+		color: 'white',
+		marginTop: '10px'
+	},
+	or:{
+		textAlign: 'center',
+		marginTop: '15px',
+		color: 'gray'
+	},
+	imgBox:{
+		textAlign: 'center'
+	},
+	loginImg:{
+		width: '180px',
+	},
+	loginFont:{
+		fontWeight: 'bolder',
+		color: '#333'
+	}
+})
+
 
 
 export default function Login() {
-
+	const classes = useStyles();
 	const userRef = useRef();
 	const passwordRef = useRef();
 	const [userNotFound,setUserNotFound] = useState(false);
@@ -50,7 +102,41 @@ export default function Login() {
                 <meta charSet="utf-8" />
                 <title>Login on Webu</title>
          </Helmet>
-			<form className="loginForm" onSubmit={handleSubmit}>
+
+			
+			<form className={classes.container} onSubmit={handleSubmit}>
+				<div className={classes.imgBox}><img src={LoginImg} className={classes.loginImg}/></div>
+				<Typography className={classes.title}><h2 className={classes.loginFont}>Login</h2></Typography>
+				<TextField
+					className={classes.inputs}
+					variant="standard"
+					type="text"
+					label="Username"
+					placeholder="enter username"
+					fullWidth
+					required
+				/>
+				<TextField
+					className={classes.inputs}
+					variant="standard"
+					type="password"
+					label="Password"
+					placeholder="enter password"
+					fullWidth
+					required
+				/>
+				<Button
+					className={classes.btn}
+					type="submit"
+					fullWidth
+					variant="contained"
+				>
+					Login
+				</Button>
+				<Typography className={classes.or}>----------or----------</Typography>
+			</form>
+			
+			{/* <form className="loginForm" onSubmit={handleSubmit}>
 				<img src={LoginImg} className="img-fluid png-resize"/>
 				<span className="loginTitle">Login</span>
 				
@@ -78,7 +164,7 @@ export default function Login() {
 					<a href="#" className="child"><i className="fab fa-twitter"></i></a>
 					<a href="#" className="child"><i className="fab fa-google"></i></a>
 				</div>
-			</form>
+			</form> */}
 			<button className="loginRegisterButton">
 				<Link className="link" to="/register">Register</Link>
 			</button>
