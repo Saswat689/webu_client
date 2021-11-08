@@ -9,7 +9,7 @@ export default function Header() {
 				<span className="headerTitleLg">Blog</span>
 			</div>
 			<img className="headerImg"
-			src="https://images.pexels.com/photos/3454270/pexels-photo-3454270.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+			src="https://i1.wp.com/www.estidia.eu/wp-content/uploads/2018/04/Savin-NY-Website-Background-Web.jpg?fit=848%2C477&ssl=1"
 			alt=""
 			/>
 		</div>
