@@ -135,36 +135,6 @@ export default function Login() {
 				</Button>
 				<Typography className={classes.or}>----------or----------</Typography>
 			</form>
-			
-			{/* <form className="loginForm" onSubmit={handleSubmit}>
-				<img src={LoginImg} className="img-fluid png-resize"/>
-				<span className="loginTitle">Login</span>
-				
-				<div className="icon-box">
-					<i className="far fa-user"></i>
-					<input type="text" className="loginInput" placeholder="Username" ref={userRef}/>
-				</div>
-				
-				<div className="icon-box">
-					<i className="fas fa-unlock"></i>
-					<input type="password" className="loginInput" placeholder="Password" ref={passwordRef}/>	
-				</div>
-
-
-				<button className="loginButton" type="submit" disabled={isFetching}>Login</button>
-				{userNotFound && (
-					<span style={{color: "green",textAlign: "center",marginTop: "20px"}}>User not found</span>
-				)}
-				{passwordNotFound && (
-					<span style={{color: "green",textAlign: "center",marginTop: "20px"}}>Password not found</span>
-				)}
-				<p className="sign-up">Or, login with...</p>
-				<div className="icons">
-					<a href="#" className="child"><i className="fab fa-facebook"></i></a>
-					<a href="#" className="child"><i className="fab fa-twitter"></i></a>
-					<a href="#" className="child"><i className="fab fa-google"></i></a>
-				</div>
-			</form> */}
 			<button className="loginRegisterButton">
 				<Link className="link" to="/register">Register</Link>
 			</button>
