@@ -11,12 +11,15 @@ import {Link} from 'react-router-dom'
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import CategoryIcon from '@material-ui/icons/Category';
 import CreateIcon from '@material-ui/icons/Create';
-import CodeIcon from '@material-ui/icons/Code';
+import HomeIcon from '@material-ui/icons/Home';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import Button from '@material-ui/core/Button';
+import { green } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
 	appbar: {
-		backgroundColor: '#011627'
+		backgroundColor: 'whiteSmoke',
+  	color: 'black'
 	},
   root: {
     // flexGrow: 1,
@@ -41,7 +44,11 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	login:{
-		marginRight: '20px'
+		marginRight: '20px',
+		display: 'none',
+		[theme.breakpoints.up("sm")]:{
+			display: "block"
+		},
 	},
 	ul:{
 		display: 'flex',
@@ -59,11 +66,27 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: '15px'
 	},
 	link: {
-		color: "white"
+		fontWeight: 'bolder'
 	},
 	list:{
 		width: '250px',
-		paddingTop: '10px'
+		height: '100%',
+		paddingTop: '10px',
+		paddingBottom: '10px',
+		backgroundColor: 'whiteSmoke',
+  	color: 'black'
+	},
+	mobileLogin: {
+		textAlign: 'center',
+		marginTop: '27rem',
+		textTransform: 'capitalize',
+		// color: 'white',
+		fontWeight: '500',
+
+	},
+	lastBtn:{
+		textAlign: 'center',
+		color: 'black',
 	}
 }));
 
@@ -118,9 +141,12 @@ export default function MenuAppBar() {
                 onClose={handleClose}
               >
                 <div className={classes.list}>
-									<MenuItem onClick={handleClose}><ListItemIcon><CodeIcon fontSize="small"/></ListItemIcon> <Link className="link" to="/">Home</Link></MenuItem>
+									<MenuItem onClick={handleClose}><ListItemIcon><HomeIcon fontSize="small"/></ListItemIcon> <Link className="link" to="/">Home</Link></MenuItem>
 									<MenuItem onClick={handleClose}><ListItemIcon><CreateIcon fontSize="small"/></ListItemIcon><Link className="link" to="/write">Write</Link></MenuItem>
 									<MenuItem onClick={handleClose}><ListItemIcon><CategoryIcon fontSize="small"/></ListItemIcon><Link className="link" to="/categories">Categories</Link></MenuItem>
+									<div className={classes.lastBtn}>
+									<Button className={classes.mobileLogin} variant="outlined"><Link className="link" to="/login">Login</Link></Button>
+									</div>
 								</div>
               </SwipeableDrawer>
             </div>
