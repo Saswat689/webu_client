@@ -124,9 +124,9 @@ export default function Register() {
 				</Button>
 				<Typography className={classes.or}>----------or----------</Typography>
 			</form>
-			<button className="registerLoginButton">
+			{/* <button className="registerLoginButton">
 				<Link className="link" to="/login">Login</Link>
-			</button>
+			</button> */}
 		</div>
 		)
 	}

@@ -12,13 +12,13 @@
 .loginRegisterButton{
 	position: absolute;
 	top: 70px;
-	right: 20px;
+	right: 30px;
 	background-color:green;
 	cursor: pointer;
 	border: none;
-	padding: 10px 20px;
+	padding: 8px 15px;
 	color: #fff;
-	border-radius: 10px;
+	border-radius: 4px;
 	font-weight: 600;
 }
 
