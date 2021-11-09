@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
 		paddingBottom: '10px',
 		backgroundColor: 'whiteSmoke',
   	color: 'black',
-		// paddingBottom: '7rem'
+		paddingBottom: '5rem'
 	},
 	mobileLogin: {
 		width: '90%',
