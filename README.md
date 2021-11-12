@@ -2,6 +2,10 @@
 
 Client side files for blog application
 
+## Demo
+
+A complete demo of this application can be found here 👉 https://www.youtube.com/watch?v=kDLPx1ci68Y
+
 ## Features include 
 
 - Clean UI built with material ui
